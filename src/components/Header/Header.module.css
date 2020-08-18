@@ -1,0 +1,28 @@
+.headerContainer {
+  width: 100%;
+  height: 85px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.icon {
+  font-size: 45px;
+}
+
+.logoContainer {
+  margin-left: 3rem;
+}
+
+.buttonsContainer {
+  margin-right: 3rem;
+}
+
+.shopButton {
+  background: black !important;
+  color: white !important;
+}

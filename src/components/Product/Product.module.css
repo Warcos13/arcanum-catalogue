@@ -1,0 +1,35 @@
+.icon {
+  font-size: 30px;
+  color: #8a2be2;
+}
+
+.label {
+  top: 20px !important;
+  border-bottom-left-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  z-index: 1;
+  background-color: rgba(138, 43, 226, 0.25) !important;
+  color: #8a2be2 !important;
+}
+
+.removeBorders {
+  box-shadow: none !important;
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+.centerText {
+  text-align: center;
+}
+.bottomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shopButton {
+  background: white !important;
+  padding: 0.5rem !important;
+}
