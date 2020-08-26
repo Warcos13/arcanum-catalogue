@@ -5,7 +5,7 @@ import classes from './Checkout.module.css';
 import CheckoutProduct from '../../components/Product/CheckoutProduct/CheckoutProduct';
 
 const handleBackToCatalogue = () => {
-  history.push('/catalogue');
+  history.push('/arcanum-catalogue/catalogue');
 };
 //TODO:Refactor to use SemanticUI grid
 //TODO:Create a page wrapper to prevent using containers in each page

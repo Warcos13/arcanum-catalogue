@@ -4,10 +4,10 @@ import { Redirect } from 'react-router-dom';
 
 const Home = () => {
   const handleClick = () => {
-    history.push('/catalogue');
+    history.push('/arcanum-catalogue/catalogue');
   };
 
-  return <Redirect to="/catalogue" />;
+  return <Redirect to="/arcanum-catalogue/catalogue" />;
 };
 
 export default Home;

@@ -5,7 +5,7 @@ import logo from '../../assets/img/logo.png';
 import { history } from '../../helpers/history';
 
 const handleOpenCart = () => {
-  history.push('/checkout');
+  history.push('/arcanum-catalogue/checkout');
 };
 
 const Header = () => {
