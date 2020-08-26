@@ -10,14 +10,11 @@ import {
   Label,
 } from 'semantic-ui-react';
 
-const Product = ({
-    product,
-    loading
-}) => {    
-    const dispatch = useStore()[1];
-    
+const Product = ({ product, loading }) => {
+  const dispatch = useStore()[1];
+
   return (
-    <Card className={classes.removeBorders} >
+    <Card className={classes.removeBorders}>
       {loading ? (
         <Placeholder>
           <Placeholder.Image square />

@@ -1,0 +1,59 @@
+.buttonFlex {
+  width: 165px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkoutContainer {
+  margin: 5% 10%;
+}
+
+.subtotalContainer {
+  margin: 35px 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+.innerContainer {
+  width: 260px;
+}
+
+.subtotal {
+  font-size: 23px;
+  color: #8a2be2;
+}
+
+.totalPrice {
+  font-size: 23px;
+  color: #989898;
+}
+
+.buyBtn {
+  display: flex !important;
+  align-items: center;
+  background: #8a2be2 !important;
+  color: white !important;
+}
+
+.icon {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.backArrow {
+  color: #8a2be2;
+}
+
+.backBtn {
+  display: flex !important;
+  align-items: center;
+  background: #fbfbfb !important;
+}
+
+.buyContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}

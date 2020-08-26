@@ -10,7 +10,6 @@ export const useStore = (shouldListen = true) => {
   const dispatch = (actionIdentifier, payload) => {
     const newState = actions[actionIdentifier](globalState, payload);
     globalState = { ...globalState, ...newState };
-    console.log('NewState:', globalState);
   };
 
   for (const listener of listeners) {

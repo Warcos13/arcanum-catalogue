@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from 'semantic-ui-react';
 import classes from './Catalogue.module.css';
-import Product from '../../components/Product/Product'
+import Product from '../../components/Product/Product';
 
 const diceTest = [
   {
@@ -272,7 +272,7 @@ const diceTest = [
 ];
 
 const Catalogue = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
