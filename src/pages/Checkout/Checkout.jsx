@@ -8,10 +8,9 @@ const handleBackToCatalogue = () => {
   history.push('/arcanum-catalogue/catalogue');
 };
 //TODO:Refactor to use SemanticUI grid
-//TODO:Create a page wrapper to prevent using containers in each page
 const Checkout = () => {
   return (
-    <div className={classes.checkoutContainer}>
+    <React.Fragment>
       <Button className={classes.backBtn} onClick={handleBackToCatalogue}>
         <i
           className={`las la-arrow-left ${classes.backArrow} ${classes.icon}`}
@@ -36,7 +35,7 @@ const Checkout = () => {
           Pedir por whatsapp
         </Button>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

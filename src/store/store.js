@@ -1,37 +1,17 @@
-import { useEffect, useState } from 'react';
+import { createEpicMiddleware } from 'redux-observable';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import rootReducer from './root.reducer';
+import rootEpic from './root.epic';
 
-let globalState = {};
-let listeners = [];
-let actions = {};
+const epicMiddleware = createEpicMiddleware();
 
-export const useStore = (shouldListen = true) => {
-  const setState = useState(globalState)[1];
+export default function configureAppStore() {
+  const store = configureStore({
+    reducer: rootReducer,
+    middleware: [epicMiddleware, ...getDefaultMiddleware()],
+  });
 
-  const dispatch = (actionIdentifier, payload) => {
-    const newState = actions[actionIdentifier](globalState, payload);
-    globalState = { ...globalState, ...newState };
-  };
+  epicMiddleware.run(rootEpic);
 
-  for (const listener of listeners) {
-    listener(globalState);
-  }
-
-  useEffect(() => {
-    if (shouldListen) {
-      listeners.push(setState);
-    }
-
-    return () => {
-      listeners = listeners.filter((li) => li !== setState);
-    };
-  }, [setState, shouldListen]);
-
-  return [globalState, dispatch];
-};
-
-export const initStore = (userActions, initialState) => {
-  if (initialState) {
-    globalState = { ...globalState, ...initialState };
-  }
-  actions = { ...actions, ...userActions };
-};
+  return store;
+}

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Segment, Image, Button } from 'semantic-ui-react';
 import classes from './CheckoutProduct.module.css';
 
 const product = {
-  img:
+  imageUrl:
     'https://drive.google.com/uc?export=view&id=1WGkQlj6CTqhVdySydH64GibkYz3YTd6C',
   price: '8.000',
   name: 'Azul Mate',
@@ -20,7 +20,7 @@ const CheckoutProduct = () => {
       <Segment raised className={classes.productContainer}>
         <div className={classes.innerContainer}>
           <div className={classes.imageContainer}>
-            <Image src={product.img} size="small" />
+            <Image src={product.imageUrl} size="small" />
           </div>
           <div>
             <p className={classes.productName}>{product.name}</p>

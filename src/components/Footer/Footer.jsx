@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
       <div className={classes.aditonalInfoContainer}>
         <p>
-          Made with <i class="las la-heart" />
+          Made with <i className="las la-heart" />
         </p>
         <p>Esta web aun se encuentra en desarrollo</p>
       </div>

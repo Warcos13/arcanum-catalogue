@@ -1,4 +1,8 @@
-.FullScreenContainer{
-    width: 100%;
-    background-color: #FBFBFB;
+.FullScreenContainer {
+  width: 100%;
+  background-color: #fbfbfb;
+}
+
+.contentContainer {
+  margin: 5% 10%;
 }

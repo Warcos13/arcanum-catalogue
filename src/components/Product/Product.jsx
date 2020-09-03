@@ -1,21 +1,18 @@
 import React from 'react';
-import { useStore } from '../../store/store';
 import classes from './Product.module.css';
 import {
   Button,
   Card,
   Image,
-  Placeholder,
   Segment,
   Label,
+  Placeholder,
 } from 'semantic-ui-react';
 
-const Product = ({ product, loading }) => {
-  const dispatch = useStore()[1];
-
+const Product = ({ product, isLoading, onClickAddProduct }) => {
   return (
     <Card className={classes.removeBorders}>
-      {loading ? (
+      {isLoading ? (
         <Placeholder>
           <Placeholder.Image square />
         </Placeholder>
@@ -24,11 +21,11 @@ const Product = ({ product, loading }) => {
           <Label className={classes.label} attached="top right">
             Disponible:<strong>{` ${product.inventory}`}</strong>
           </Label>
-          <Image src={product.avatar} />
+          <Image src={product.imageUrl} />
         </Segment>
       )}
       <Card.Content className={classes.removeBorders}>
-        {loading ? (
+        {isLoading ? (
           <Placeholder>
             <Placeholder.name>
               <Placeholder.Line length="very short" />
@@ -43,18 +40,20 @@ const Product = ({ product, loading }) => {
             <Card.Header className={classes.centerText}>
               {product.name}
             </Card.Header>
-            <Card.Meta className={classes.centerText}>Set de 7 Dados</Card.Meta>
+            <Card.Meta className={classes.centerText}>
+              {product.subtitle}
+            </Card.Meta>
             <Card.Description>{product.description}</Card.Description>
             <Card.Meta>{product.aditionalInfo}</Card.Meta>
             <div className={classes.bottomContainer}>
-              <span>{`COP ${product.price}`}</span>
+              <span>{`COP ${product.price?product.price
+                .toString()
+                .replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1.'):''}`}</span>
               <Button
                 className={classes.shopButton}
-                disabled={loading}
+                disabled={isLoading}
                 icon
-                onClick={() => {
-                  dispatch('TEST_ACTION', [product.name]);
-                }}
+                onClick={onClickAddProduct}
               >
                 <i className={`las la-shopping-cart ${classes.icon}`} />
               </Button>
