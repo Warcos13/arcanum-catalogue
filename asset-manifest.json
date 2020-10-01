@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/arcanum-catalogue/static/css/main.b3e944b4.chunk.css",
-    "main.js": "/arcanum-catalogue/static/js/main.0cf7b34d.chunk.js",
-    "main.js.map": "/arcanum-catalogue/static/js/main.0cf7b34d.chunk.js.map",
+    "main.js": "/arcanum-catalogue/static/js/main.37cdb016.chunk.js",
+    "main.js.map": "/arcanum-catalogue/static/js/main.37cdb016.chunk.js.map",
     "runtime-main.js": "/arcanum-catalogue/static/js/runtime-main.8be43ead.js",
     "runtime-main.js.map": "/arcanum-catalogue/static/js/runtime-main.8be43ead.js.map",
     "static/css/2.d638c734.chunk.css": "/arcanum-catalogue/static/css/2.d638c734.chunk.css",
     "static/js/2.ebd34a1f.chunk.js": "/arcanum-catalogue/static/js/2.ebd34a1f.chunk.js",
     "static/js/2.ebd34a1f.chunk.js.map": "/arcanum-catalogue/static/js/2.ebd34a1f.chunk.js.map",
     "index.html": "/arcanum-catalogue/index.html",
-    "precache-manifest.af108ba76473a67c367606bde0163c83.js": "/arcanum-catalogue/precache-manifest.af108ba76473a67c367606bde0163c83.js",
+    "precache-manifest.f733345cd3263cf2bc58f0000e5c7153.js": "/arcanum-catalogue/precache-manifest.f733345cd3263cf2bc58f0000e5c7153.js",
     "service-worker.js": "/arcanum-catalogue/service-worker.js",
     "static/css/2.d638c734.chunk.css.map": "/arcanum-catalogue/static/css/2.d638c734.chunk.css.map",
     "static/css/main.b3e944b4.chunk.css.map": "/arcanum-catalogue/static/css/main.b3e944b4.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.d638c734.chunk.css",
     "static/js/2.ebd34a1f.chunk.js",
     "static/css/main.b3e944b4.chunk.css",
-    "static/js/main.0cf7b34d.chunk.js"
+    "static/js/main.37cdb016.chunk.js"
   ]
 }

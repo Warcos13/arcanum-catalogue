@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f4c207d56d68a3356aacf919031f6f92",
+    "revision": "eb2070a47f94945fd41823f86c3cc1df",
     "url": "/arcanum-catalogue/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/arcanum-catalogue/static/css/2.d638c734.chunk.css"
   },
   {
-    "revision": "91b83fe7600611cae12f",
+    "revision": "0015201fea391bdc878a",
     "url": "/arcanum-catalogue/static/css/main.b3e944b4.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/arcanum-catalogue/static/js/2.ebd34a1f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "91b83fe7600611cae12f",
-    "url": "/arcanum-catalogue/static/js/main.0cf7b34d.chunk.js"
+    "revision": "0015201fea391bdc878a",
+    "url": "/arcanum-catalogue/static/js/main.37cdb016.chunk.js"
   },
   {
     "revision": "e753080581720058a012",
