@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0493027386642721164755639b3828c2",
+    "revision": "4ae51117d1b6c3d6380af7b9192a7ce7",
     "url": "/arcanum-catalogue/index.html"
   },
   {
-    "revision": "95d39f6ea53f7c231276",
+    "revision": "758483d367960060bd81",
     "url": "/arcanum-catalogue/static/css/2.d638c734.chunk.css"
   },
   {
-    "revision": "378ba4642cbfc129789b",
+    "revision": "2570304bdf1a8482a4eb",
     "url": "/arcanum-catalogue/static/css/main.b3e944b4.chunk.css"
   },
   {
-    "revision": "95d39f6ea53f7c231276",
-    "url": "/arcanum-catalogue/static/js/2.88736a0e.chunk.js"
+    "revision": "758483d367960060bd81",
+    "url": "/arcanum-catalogue/static/js/2.ebd34a1f.chunk.js"
   },
   {
     "revision": "e499b5192bf6a178b3a911502e8fd7ac",
-    "url": "/arcanum-catalogue/static/js/2.88736a0e.chunk.js.LICENSE.txt"
+    "url": "/arcanum-catalogue/static/js/2.ebd34a1f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "378ba4642cbfc129789b",
-    "url": "/arcanum-catalogue/static/js/main.717a0f36.chunk.js"
+    "revision": "2570304bdf1a8482a4eb",
+    "url": "/arcanum-catalogue/static/js/main.665b5314.chunk.js"
   },
   {
     "revision": "e753080581720058a012",
