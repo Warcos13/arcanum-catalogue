@@ -14,7 +14,7 @@ const Footer = () => {
         <p>
           Made with <i className="las la-heart" />
         </p>
-        <p>Esta web aun se encuentra en desarrollo</p>
+        <p>Esta web todavia se encuentra en desarrollo</p>
       </div>
     </div>
   );

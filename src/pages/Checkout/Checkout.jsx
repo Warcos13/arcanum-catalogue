@@ -8,7 +8,12 @@ const handleBackToCatalogue = () => {
   history.push('/arcanum-catalogue/catalogue');
 };
 //TODO:Refactor to use SemanticUI grid
-const Checkout = () => {
+const Checkout = ({
+  products,
+  onDeleteProduct,
+  onAddQuantity,
+  onSubstractQuantity,
+}) => {
   return (
     <React.Fragment>
       <Button className={classes.backBtn} onClick={handleBackToCatalogue}>
@@ -17,15 +22,24 @@ const Checkout = () => {
         />
         Regresar
       </Button>
-      <CheckoutProduct></CheckoutProduct>
-      <CheckoutProduct></CheckoutProduct>
-      <CheckoutProduct></CheckoutProduct>
+      {products.map((product) => (
+        <CheckoutProduct
+          key={product.id}
+          product={product}
+          onClickDelete={(productId) => onDeleteProduct(productId)}
+          onClickAdd={(productId) => onAddQuantity(productId)}
+          onClickSubstract={(productId) => onSubstractQuantity(productId)}
+        />
+      ))}
+
       <div className={classes.subtotalContainer}>
         <div className={classes.innerContainer}>
           <span className={classes.subtotal}>SUBTOTAL</span>
         </div>
         <div className={classes.innerContainer}>
-          <span className={classes.totalPrice}>{` COP 24000`}</span>
+          <span className={classes.totalPrice}>
+            {products.reduce((acc, curr) => acc + parseInt(curr.price), 0)}
+          </span>
         </div>
       </div>
       <Divider />

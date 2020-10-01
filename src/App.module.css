@@ -1,8 +1,20 @@
+
 .FullScreenContainer {
   width: 100%;
   background-color: #fbfbfb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .contentContainer {
   margin: 5% 10%;
+}
+
+.messagePortal {
+  position: fixed !important;
+  bottom: 25px;
+  z-index: 50;
+  width: 45%;
+  right: 15px;
 }
