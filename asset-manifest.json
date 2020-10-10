@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/arcanum-catalogue/static/css/main.b3e944b4.chunk.css",
-    "main.js": "/arcanum-catalogue/static/js/main.37cdb016.chunk.js",
-    "main.js.map": "/arcanum-catalogue/static/js/main.37cdb016.chunk.js.map",
+    "main.css": "/arcanum-catalogue/static/css/main.a60547c7.chunk.css",
+    "main.js": "/arcanum-catalogue/static/js/main.bf652dcb.chunk.js",
+    "main.js.map": "/arcanum-catalogue/static/js/main.bf652dcb.chunk.js.map",
     "runtime-main.js": "/arcanum-catalogue/static/js/runtime-main.8be43ead.js",
     "runtime-main.js.map": "/arcanum-catalogue/static/js/runtime-main.8be43ead.js.map",
     "static/css/2.d638c734.chunk.css": "/arcanum-catalogue/static/css/2.d638c734.chunk.css",
-    "static/js/2.ebd34a1f.chunk.js": "/arcanum-catalogue/static/js/2.ebd34a1f.chunk.js",
-    "static/js/2.ebd34a1f.chunk.js.map": "/arcanum-catalogue/static/js/2.ebd34a1f.chunk.js.map",
+    "static/js/2.2a24925f.chunk.js": "/arcanum-catalogue/static/js/2.2a24925f.chunk.js",
+    "static/js/2.2a24925f.chunk.js.map": "/arcanum-catalogue/static/js/2.2a24925f.chunk.js.map",
     "index.html": "/arcanum-catalogue/index.html",
-    "precache-manifest.f733345cd3263cf2bc58f0000e5c7153.js": "/arcanum-catalogue/precache-manifest.f733345cd3263cf2bc58f0000e5c7153.js",
+    "precache-manifest.24b16aa42581f91c9ee8f6c9293fdcb7.js": "/arcanum-catalogue/precache-manifest.24b16aa42581f91c9ee8f6c9293fdcb7.js",
     "service-worker.js": "/arcanum-catalogue/service-worker.js",
     "static/css/2.d638c734.chunk.css.map": "/arcanum-catalogue/static/css/2.d638c734.chunk.css.map",
-    "static/css/main.b3e944b4.chunk.css.map": "/arcanum-catalogue/static/css/main.b3e944b4.chunk.css.map",
-    "static/js/2.ebd34a1f.chunk.js.LICENSE.txt": "/arcanum-catalogue/static/js/2.ebd34a1f.chunk.js.LICENSE.txt",
+    "static/css/main.a60547c7.chunk.css.map": "/arcanum-catalogue/static/css/main.a60547c7.chunk.css.map",
+    "static/js/2.2a24925f.chunk.js.LICENSE.txt": "/arcanum-catalogue/static/js/2.2a24925f.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/arcanum-catalogue/static/media/outline-icons.ef60a4f6.woff",
     "static/media/logo.png": "/arcanum-catalogue/static/media/logo.a8420689.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8be43ead.js",
     "static/css/2.d638c734.chunk.css",
-    "static/js/2.ebd34a1f.chunk.js",
-    "static/css/main.b3e944b4.chunk.css",
-    "static/js/main.37cdb016.chunk.js"
+    "static/js/2.2a24925f.chunk.js",
+    "static/css/main.a60547c7.chunk.css",
+    "static/js/main.bf652dcb.chunk.js"
   ]
 }
