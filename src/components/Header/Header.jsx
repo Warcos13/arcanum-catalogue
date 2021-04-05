@@ -1,6 +1,6 @@
 import React from 'react';
-import classes from './Header.module.css';
-import { Image, Button } from 'semantic-ui-react';
+import generateClasses from './Header.classes';
+import Button from '@material-ui/core/Button';
 import logo from '../../assets/img/logo.png';
 import { history } from '../../helpers/history';
 
@@ -13,16 +13,18 @@ const handleOpenAdminTemp = () => {
 };
 
 const Header = () => {
+  const classes = generateClasses();
+
   return (
     <div className={classes.headerContainer}>
       <div className={classes.logoContainer}>
-        <Image src={logo} />
+        <img src={logo} />
       </div>
       <div className={classes.buttonsContainer}>
         <Button className={classes.shopButton} onClick={handleOpenAdminTemp}>
           Go to Admin Temp
         </Button>
-        <Button icon className={classes.shopButton} onClick={handleOpenCart}>
+        <Button className={classes.shopButton} onClick={handleOpenCart}>
           <i className={`las la-shopping-cart ${classes.icon}`} />
         </Button>
       </div>

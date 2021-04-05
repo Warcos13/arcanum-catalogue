@@ -1,4 +1,3 @@
-
 .FullScreenContainer {
   width: 100%;
   background-color: #fbfbfb;
@@ -8,9 +7,11 @@
 }
 
 .contentContainer {
-  margin: 5% 10%;
+  margin: 5%;
 }
-
+.closeSnackBtn {
+  color: white;
+}
 .messagePortal {
   position: fixed !important;
   bottom: 25px;

@@ -4,7 +4,6 @@ const generalSlice = createSlice({
   name: 'general',
   initialState: {
     isLoading: false,
-    error: '',
   },
   reducers: {
     setIsLoading: (state, action) => {

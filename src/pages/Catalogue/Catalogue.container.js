@@ -11,6 +11,7 @@ const { addProduct } = checkoutSlice.actions;
 const mapStateToProps = (state) => ({
   isLoading: state.general.isLoading,
   products: state.catalogue.products,
+  checkoutProducts: state.checkout.checkoutProducts,
 });
 
 const mapDispatchToProps = {

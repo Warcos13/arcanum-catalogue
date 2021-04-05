@@ -1,14 +1,25 @@
 import React from 'react';
-import classes from './Footer.module.css';
-import { Button } from 'semantic-ui-react';
+import generateClases from './Footer.classes.js';
+import { IconButton } from '@material-ui/core';
 
 const Footer = () => {
+  const classes = generateClases();
   return (
     <div className={classes.footerContainer}>
       <div className={classes.followUsContainer}>
-        <div className={classes.followUsLabel}>Siguenos:</div>
-        <Button circular color="facebook" icon="facebook" />
-        <Button circular color="instagram" icon="instagram" />
+        <div>Siguenos:</div>
+        <div className={classes.followUsBtnContainer}>
+          <IconButton
+            className={`${classes.socialMediaBtn} ${classes.fbBtnColor}`}
+          >
+            <i className="lab la-facebook-square"></i>
+          </IconButton>
+          <IconButton
+            className={`${classes.socialMediaBtn} ${classes.instaBtnColor}`}
+          >
+            <i className="lab la-instagram"></i>
+          </IconButton>
+        </div>
       </div>
       <div className={classes.aditonalInfoContainer}>
         <p>

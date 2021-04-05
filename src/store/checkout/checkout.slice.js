@@ -1,33 +1,24 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const checkoutSlice = createSlice({
-  name: 'general',
+  name: 'checkout',
   initialState: {
     checkoutProducts: [],
+    itemWasAdded: false,
   },
   reducers: {
     addProduct: (state, action) => {
-      const productAlreadyExist = state.checkoutProducts.filter(
-        (product) => product.id === action.payload.id
-      ).length
-        ? true
-        : false;
-
-      if (!productAlreadyExist) {
-        state.checkoutProducts = [
-          ...state.checkoutProducts,
-          {
-            id: action.payload.id,
-            imageUrl: action.payload.imageUrl,
-            name: action.payload.name,
-            subtitle: action.payload.subtitle,
-            price: action.payload.price,
-            quantity: 1,
-          },
-        ];
-      } else {
-        state.checkoutProducts = [...state.checkoutProducts];
-      }
+      state.checkoutProducts = [
+        ...state.checkoutProducts,
+        {
+          id: action.payload.id,
+          imageUrl: action.payload.imageUrl,
+          name: action.payload.name,
+          subtitle: action.payload.subtitle,
+          price: action.payload.price,
+          quantity: 1,
+        },
+      ];
     },
     deleteProduct: (state, action) => {
       state.checkoutProducts = state.checkoutProducts.filter(

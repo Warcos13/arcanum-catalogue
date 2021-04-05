@@ -1,6 +1,11 @@
+import { Paper } from '@material-ui/core';
 import React from 'react';
-import { Segment, Image, Button } from 'semantic-ui-react';
-import classes from './CheckoutProduct.module.css';
+import Image from 'material-ui-image';
+import { Button } from 'semantic-ui-react';
+import generateClasses from './CheckoutProduct.classes';
+import { toCop } from '../../../helpers/utils';
+
+//TODO:Refactor to use Maerial grid
 
 const CheckoutProduct = ({
   product,
@@ -8,12 +13,13 @@ const CheckoutProduct = ({
   onClickAdd,
   onClickSubstract,
 }) => {
+    const classes = generateClasses();
   return (
     <div className={classes.rowContainer}>
-      <Segment raised className={classes.productContainer}>
+      <Paper elevation={1} className={classes.productContainer}>
         <div className={classes.innerContainer}>
           <div className={classes.imageContainer}>
-            <Image src={product.imageUrl} size="small" />
+            <Image src={product.imageUrl} cover />
           </div>
           <div>
             <p className={classes.productName}>{product.name}</p>
@@ -44,13 +50,12 @@ const CheckoutProduct = ({
               </Button>
             </div>
           </div>
-          <div
-            className={classes.priceContainer}
-          >{`COP ${product.price
-            .toString()
-            .replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1.')}`}</div>
+
+          <div className={classes.priceContainer}>
+            {toCop(product.price * product.quantity)}
+          </div>
         </div>
-      </Segment>
+      </Paper>
       <div className={classes.deleteBtnContainer}>
         <Button
           icon
